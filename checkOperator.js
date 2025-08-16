@@ -1,20 +1,29 @@
+ 
+export let checkOperator = function(){
+
+let operator;
+
 if(document.getElementById("add").checked)
 {
-    operatorChecked = "add";
+    operator = "add";
 }
 else if(document.getElementById("subtract").checked)
 {
-    operatorChecked = "subtract";
+    operator = "subtract";
 }
 else if(document.getElementById("multiply").checked)
 {
-    operatorChecked = "multiply";
+    operator = "multiply";
 }
 else if(document.getElementById("divide").checked)
 {
-    operatorChecked = "divide";
+    operator = "divide";
 }
 else
 {
     console.log("error")
 }
+
+return operator;
+
+};
